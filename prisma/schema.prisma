@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Movie {
+  id           Int      @id @default(autoincrement())
+  title        String
+  genre        String
+  description  String
+  year         Int
+  thumbnailUrl String?
+  actors       String
+  director     String
+  ratings      Rating[]
+}
+
+model Rating {
+  id        Int      @id @default(autoincrement())
+  title     String
+  author    String
+  date      DateTime
+  rating    Int
+  opinion   String
+  movieId   Int
+  Movie     Movie    @relation(fields: [movieId], references: [id])
+}
