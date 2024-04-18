@@ -1,0 +1,366 @@
+{
+  "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-68637a8e-8ed8",
+  "name": "Microsoft.Web-FunctionApp-Portal-68637a8e-8ed8",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourcegroups/project_razrabotka_vot/providers/Microsoft.Web/sites/razrabotka-film-reviews",
+    "marketplaceItemId": "Microsoft.FunctionApp",
+    "provisioningHash": "customize-post-provisioning-steps-functionapp-deployment"
+  },
+  "properties": {
+    "templateHash": "13352440804401079198",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "4657e047-d741-4766-acee-608e403a0765"
+      },
+      "name": {
+        "type": "String",
+        "value": "razrabotka-film-reviews"
+      },
+      "location": {
+        "type": "String",
+        "value": "East US"
+      },
+      "use32BitWorkerProcess": {
+        "type": "Bool",
+        "value": true
+      },
+      "ftpsState": {
+        "type": "String",
+        "value": "FtpsOnly"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "projectrazrabotkavo9fac"
+      },
+      "netFrameworkVersion": {
+        "type": "String",
+        "value": "v6.0"
+      },
+      "sku": {
+        "type": "String",
+        "value": "Dynamic"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "Y1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      },
+      "repoUrl": {
+        "type": "String",
+        "value": "https://github.com/pesho21/razrabotka_azure"
+      },
+      "branch": {
+        "type": "String",
+        "value": "main"
+      },
+      "oidcUserIdentityName": {
+        "type": "String",
+        "value": "razrabotka-film--id-9e0e"
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ASP-projectrazrabotkavot-aaa0"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "project_razrabotka_vot"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": false
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2024-04-18T20:06:45.3831933Z",
+    "duration": "PT1M25.2218259S",
+    "correlationId": "bb398fbe-e541-4de8-a2fa-38152b6c47b0",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "sites/basicPublishingCredentialsPolicies",
+            "locations": [
+              null
+            ]
+          },
+          {
+            "resourceType": "sites/sourcecontrols",
+            "locations": [
+              null
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.ManagedIdentity",
+        "resourceTypes": [
+          {
+            "resourceType": "userAssignedIdentities",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "userAssignedIdentities/federatedIdentityCredentials",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Authorization",
+        "resourceTypes": [
+          {
+            "resourceType": "roleAssignments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "microsoft.insights",
+        "resourceTypes": [
+          {
+            "resourceType": "components",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Storage",
+        "resourceTypes": [
+          {
+            "resourceType": "storageAccounts",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Resources",
+        "resourceTypes": [
+          {
+            "resourceType": "deployments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/microsoft.insights/components/razrabotka-film-reviews",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "razrabotka-film-reviews"
+          },
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/serverfarms/ASP-projectrazrabotkavot-aaa0",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ASP-projectrazrabotkavot-aaa0"
+          },
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Storage/storageAccounts/projectrazrabotkavo9fac",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "projectrazrabotkavo9fac"
+          },
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/microsoft.insights/components/razrabotka-film-reviews",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "razrabotka-film-reviews",
+            "apiVersion": "2015-05-01"
+          },
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Storage/storageAccounts/projectrazrabotkavo9fac",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "projectrazrabotkavo9fac",
+            "actionName": "listKeys",
+            "apiVersion": "2019-06-01"
+          }
+        ],
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/sites/razrabotka-film-reviews",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "razrabotka-film-reviews"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/Sites/razrabotka-film-reviews",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "razrabotka-film-reviews"
+          }
+        ],
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/sites/razrabotka-film-reviews/basicPublishingCredentialsPolicies/scm",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "razrabotka-film-reviews/scm"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/Sites/razrabotka-film-reviews",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "razrabotka-film-reviews"
+          }
+        ],
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/sites/razrabotka-film-reviews/basicPublishingCredentialsPolicies/ftp",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "razrabotka-film-reviews/ftp"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/Sites/razrabotka-film-reviews",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "razrabotka-film-reviews"
+          },
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.ManagedIdentity/userAssignedIdentities/razrabotka-film--id-9e0e",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "razrabotka-film--id-9e0e"
+          },
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.ManagedIdentity/userAssignedIdentities/razrabotka-film--id-9e0e",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "razrabotka-film--id-9e0e",
+            "apiVersion": "2018-11-30"
+          }
+        ],
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/sites/razrabotka-film-reviews/sourcecontrols/web",
+        "resourceType": "Microsoft.Web/sites/sourcecontrols",
+        "resourceName": "razrabotka-film-reviews/web"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/Sites/razrabotka-film-reviews",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "razrabotka-film-reviews"
+          }
+        ],
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.ManagedIdentity/userAssignedIdentities/razrabotka-film--id-9e0e",
+        "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+        "resourceName": "razrabotka-film--id-9e0e"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.ManagedIdentity/userAssignedIdentities/razrabotka-film--id-9e0e",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "razrabotka-film--id-9e0e"
+          }
+        ],
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.ManagedIdentity/userAssignedIdentities/razrabotka-film--id-9e0e/federatedIdentityCredentials/jitznerrzp74q",
+        "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials",
+        "resourceName": "razrabotka-film--id-9e0e/jitznerrzp74q"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/Sites/razrabotka-film-reviews",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "razrabotka-film-reviews"
+          },
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.ManagedIdentity/userAssignedIdentities/razrabotka-film--id-9e0e",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "razrabotka-film--id-9e0e"
+          },
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.ManagedIdentity/userAssignedIdentities/razrabotka-film--id-9e0e",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "razrabotka-film--id-9e0e",
+            "apiVersion": "2018-11-30"
+          }
+        ],
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.web/sites/razrabotka-film-reviews/providers/Microsoft.Authorization/roleAssignments/66a045c1-e499-5b9a-b4d4-9e59e1699350",
+        "resourceType": "Microsoft.Authorization/roleAssignments",
+        "resourceName": "66a045c1-e499-5b9a-b4d4-9e59e1699350"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.Resources/deployments/newWorkspaceTemplate",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "newWorkspaceTemplate"
+          }
+        ],
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/microsoft.insights/components/razrabotka-film-reviews",
+        "resourceType": "microsoft.insights/components",
+        "resourceName": "razrabotka-film-reviews"
+      }
+    ],
+    "outputResources": [
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-4657e047-d741-4766-acee-608e403a0765-EUS"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/microsoft.insights/components/razrabotka-film-reviews"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.ManagedIdentity/userAssignedIdentities/razrabotka-film--id-9e0e"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.ManagedIdentity/userAssignedIdentities/razrabotka-film--id-9e0e/federatedIdentityCredentials/jitznerrzp74q"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Storage/storageAccounts/projectrazrabotkavo9fac"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/serverfarms/ASP-projectrazrabotkavot-aaa0"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/sites/razrabotka-film-reviews"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/sites/razrabotka-film-reviews/basicPublishingCredentialsPolicies/ftp"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/sites/razrabotka-film-reviews/basicPublishingCredentialsPolicies/scm"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.web/sites/razrabotka-film-reviews/providers/Microsoft.Authorization/roleAssignments/66a045c1-e499-5b9a-b4d4-9e59e1699350"
+      },
+      {
+        "id": "/subscriptions/4657e047-d741-4766-acee-608e403a0765/resourceGroups/project_razrabotka_vot/providers/Microsoft.Web/sites/razrabotka-film-reviews/sourcecontrols/web"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
